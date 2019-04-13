@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header .logo{
+    flex-basis: 10%;
+    align-self: flex-start;
+    height: 200px;
+    padding: 40px;
+}
+
+header .logo img{
+    height: 200px;
+    width: 200px;
+}
+
+header .branding{
+    flex-basis: 40%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 12px;
+    height: 200px;
+    padding: 50px;
+    align-self: flex-end;
+}
+
+.navigation{
+    flex-basis: 100%;
+}
+
+.navigation ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+}
+
+.navigation li{
+    display: inline-flex;
+    flex-basis: 20%;
+    justify-content: center;
+    background: #2F3061;
+    padding: 15px;
+    color: #EBEDE6;
+}
+
+.navigation li:first-child{
+    border-right: 2px solid rgb(192, 153, 153);
+}
+
+.navigation li:last-child{
+    border-left: 2px solid rgb(219, 183, 183);
+}
+
+.navigation .shrinkx2{
+    flex-grow: 1.5;
+}
+
+.about{
+    width: 60%;
+    margin: 0 auto 0 auto;
+    height: 200px;
+    background: rgba(235, 237, 230, 0.527);
+}
+
+.about h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.about p{
+    border-top: 1px solid #5F5980;
+    padding: 30px;
+}
+
+.about-container{
+    background: #ddd;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0 0 0;
+    height: 300px;
+}
