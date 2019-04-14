@@ -39,6 +39,52 @@ header .branding{
     align-self: flex-end;
 }
 
+@media only screen and (max-width: 950px){
+    header {
+        background: #000;
+        color: #EBEDE6;
+        flex-wrap: wrap;
+    }
+
+    header .navigation li{
+        flex-basis: 330px;
+        
+    }
+    
+    header .navigation{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    header .logo{
+        align-self: center;
+        flex-basis: 100%;
+        height: 100px;
+    }
+
+    header .branding{
+        align-self: center;
+        flex-basis: 100%;
+        height: 40px;
+        line-height: 0;
+    }
+
+    header img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 480px){
+    header .branding{
+        display: none;
+    }
+
+    header .logo{
+        height: 200px;
+    }
+}
+
 /*navigation */
 
 .navigation{
@@ -71,7 +117,7 @@ header .branding{
     border-left: 2px solid rgb(219, 183, 183);
 }
 
-
+/* About */
 
 .about{
     width: 60%;
@@ -100,6 +146,18 @@ header .branding{
     height: 400px;
 }
 
+@media only screen and (max-width: 600px){
+    .about-container{
+        height: max-content;
+        background-position: 60% 0;
+       
+    }
+    .about{
+        height: fit-content;
+        width: 100%;
+    }
+}
+
 /* Services */
 
 .services{
@@ -115,9 +173,9 @@ header .branding{
 .services div{
     flex-basis: 300px;
     margin: 20px;
-    padding: 30px
+    padding: 30px;
     box-sizing: content-box;
-    color: #EBEDE6;
+    color: #dddddd;
 }
 
 .services h1{
@@ -159,10 +217,26 @@ header .branding{
 .contact button{
     margin: auto;
     align-items: center;
+    background: rgba(4, 18, 58, 0.664);
+    color: rgb(243, 243, 243);
 }
 
 .contact form textarea{
     vertical-align: center;
+}
+
+@media only screen and (max-width: 750px){
+    .contact form{
+        display: block;
+    }
+
+    .contact form div{
+        margin: 0 0 0 -60px;
+    }
+
+    .contact div textarea,input{
+        width: 90%;
+    }
 }
 
 /*pricing */
@@ -193,11 +267,29 @@ header .branding{
 .circles{
     display: inline-flex;
     justify-content: center;
+    transition-duration: 1s;
 }
 
 .circle{
-    background: #343434;
+    background: rgb(163, 72, 72);
     height: 40px;
+    margin-right: 5px;
     width: 40px;
     border-radius: 100%;
+    transition-duration: 1s;
 }
+
+.leftward{
+    margin-left: 60px;
+}
+
+#pr1 .circle{
+    background: rgb(99, 235, 151);
+}
+#pr2 .circle{
+    background: #b8ca50;
+}
+#pr4 .circle{
+    background: rgb(99, 235, 151);
+}
+
